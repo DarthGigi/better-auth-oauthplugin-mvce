@@ -5,7 +5,7 @@
 3. Run the database migrations with `pnpm db:migrate`.
 4. Run `dotenv -e .env -- pnpm build` to build the project.
 5. Start the server with `dotenv -e .env -- node build`.
-   - Notice the `Better Auth was already imported. This breaks async local storage instance and will lead to issues!` message in the console.
+   - ~~Notice the `Better Auth was already imported. This breaks async local storage instance and will lead to issues!` message in the console.~~ This has been resolved.
 6. Open your browser and navigate to `http://localhost:3000` to see the application running.
 7. Click on "Sign Up" to create a new account.
 8. You will see the error message:
@@ -35,3 +35,5 @@
   └── better-auth 1.4.11 peer
   better-auth 1.4.11
   ```
+- https://www.better-auth.com/docs/reference/faq#dual-module-hazard-issue
+- https://github.com/better-auth/better-auth/issues/7023#issuecomment-3740635680
